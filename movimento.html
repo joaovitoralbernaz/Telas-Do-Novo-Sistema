@@ -2,25 +2,28 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="movimento.css">
     <title>Movimento de Estoque - Sistema de Farmácia</title>
 </head>
 <body>
     <header>
-        <h1>Sistema de Estoque de Farmácia</h1>
-        <h2>Registro de Movimento de Estoque</h2>
+        <img src="img/logomain.png" alt="MainLogo" class="MainLogo">
+        <nav>
+            <div class="logo"></div>
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="#cadastros">Cadastros</a>
+                <a href="movimento.html">Movimento</a>
+                <a href="relatorio.html">Relatório</a>
+            </div>
+        </nav>
+    </header>
+    </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Estoque</a></li>
-            <li><a href="#">Funcionários</a></li>
-            <li><a href="#">Relatórios</a></li>
-            <li><a href="#">Sair</a></li>
-        </ul>
-    </nav>
+    
 
     <main>
         <section>
@@ -29,7 +32,7 @@
             <form action="#" method="post">
                 <fieldset>
                     <legend>Dados do Movimento</legend>
-                    
+                      <a href="index.html" class="back-btn">← Voltar</a>
                     <div>
                         <label for="tipo_movimento">Tipo de Movimento:</label>
                         <select id="tipo_movimento" name="tipo_movimento" required>
