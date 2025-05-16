@@ -26,6 +26,12 @@ header {
     color: white;
 }
 
+.MainLogo{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;

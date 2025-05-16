@@ -13,32 +13,22 @@ body {
 }
 
 header {
-    height: 130px;
-    display: flex;
-    align-items: center;
-    background-color: #363534;
-    color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 0 20px;
-}
-
-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    padding: 10px 20px;
+    background-color: #363534;
+    color: white;
 }
 
 .nav-links {
     display: flex;
-    margin-left: 300px;
-    gap: 50px;
+    gap: 20px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
     padding: 0.5rem;
     border-radius: 4px;
     transition: background-color 0.3s;
