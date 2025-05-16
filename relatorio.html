@@ -14,7 +14,7 @@
             <div class="logo"></div>
             <div class="nav-links">
                 <a href="index.html">Início</a>
-                <a href="#cadastros">Cadastros</a>
+                <a href="index.html">Cadastros</a>
                 <a href="movimento.html">Movimento</a>
                 <a href="relatorio.html">Relatório</a>
             </div>
@@ -83,6 +83,7 @@
                         <th>Categoria</th>
                         <th>Fabricante</th>
                         <th>Lote</th>
+                        <th>Fabricação</th>
                         <th>Validade</th>
                         <th>Estoque Atual</th>
                         <th>Estoque Mínimo</th>
@@ -98,6 +99,7 @@
                         <td>Analgésicos</td>
                         <td>EMS</td>
                         <td>LOT123456</td>
+                        <td>01/2024</td>
                         <td>12/2026</td>
                         <td>150</td>
                         <td>30</td>
@@ -114,7 +116,8 @@
                         <td>Dipirona Sódica</td>
                         <td>Analgésicos</td>
                         <td>Medley</td>
-                        <td>LOT789012</td>
+                        <td>LOT123457</td>
+                        <td>02/2024</td>
                         <td>10/2025</td>
                         <td>25</td>
                         <td>30</td>
@@ -131,7 +134,8 @@
                         <td>Amoxicilina</td>
                         <td>Antibióticos</td>
                         <td>Neo Química</td>
-                        <td>LOT345678</td>
+                        <td>LOT123458</td>
+                        <td>03/2024</td>
                         <td>06/2025</td>
                         <td>0</td>
                         <td>15</td>
@@ -148,7 +152,8 @@
                         <td>Omeprazol</td>
                         <td>Antiulcerosos</td>
                         <td>Eurofarma</td>
-                        <td>LOT901234</td>
+                        <td>LOT123459</td>
+                        <td>04/2024</td>
                         <td>06/2025</td>
                         <td>80</td>
                         <td>20</td>
@@ -165,7 +170,8 @@
                         <td>Losartana Potássica</td>
                         <td>Anti-hipertensivos</td>
                         <td>Aché</td>
-                        <td>LOT567890</td>
+                        <td>LOT123450</td>
+                        <td>05/2024</td>
                         <td>09/2026</td>
                         <td>200</td>
                         <td>50</td>
@@ -230,46 +236,6 @@
                 </tfoot>
             </table>
             
-            <h4>Histórico de Movimentações</h4>
-            
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Data</th>
-                        <th>Tipo</th>
-                        <th>Lote</th>
-                        <th>Quantidade</th>
-                        <th>Responsável</th>
-                        <th>Observação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>14/05/2025</td>
-                        <td>Entrada</td>
-                        <td>LOT123457</td>
-                        <td>+50</td>
-                        <td>Maria Oliveira</td>
-                        <td>Recebimento NF 12345</td>
-                    </tr>
-                    <tr>
-                        <td>10/05/2025</td>
-                        <td>Saída</td>
-                        <td>LOT123456</td>
-                        <td>-10</td>
-                        <td>João Silva</td>
-                        <td>Venda balcão</td>
-                    </tr>
-                    <tr>
-                        <td>01/05/2025</td>
-                        <td>Entrada</td>
-                        <td>LOT123456</td>
-                        <td>+110</td>
-                        <td>Pedro Santos</td>
-                        <td>Recebimento NF 12300</td>
-                    </tr>
-                </tbody>
-            </table>
         </section>
 
         <section>
@@ -334,9 +300,22 @@
                             <option value="1">Antibióticos</option>
                             <option value="2">Anti-inflamatórios</option>
                             <option value="3">Analgésicos</option>
-                            <option value="4">Controlados</option>
+                            <option value="4">Controlados de tarja preta</option>
                             <option value="5">Vitaminas e Suplementos</option>
                             <option value="6">Dermocosméticos</option>
+                            <option value="7">Genérico</option>
+                            <option value="8">Manipulado</option>
+                            <option value="9">Antialérgicos</option>
+                            <option value="10">Industrializado</option>
+                            <option value="11">Fitoterápico</option>
+                            <option value="12">Importado</option>
+                            <option value="13">Nacional</option>
+                            <option value="14">Tarja vermelha</option>
+                            <option value="15">Sob prescrição</option>
+                            <option value="16">Isentos de prescrição (MIPs)</option>
+                            <option value="17">Sintéticos</option>
+                            <option value="18">Semissintéticos</option>
+                            <option value="19">Outros</option>
                         </select>
                     </div>
                     
@@ -351,31 +330,41 @@
                             <option value="5">Aché</option>
                         </select>
                     </div>
+
+                    <div>
+                        <label for="lote_produto">Lote:</label>
+                        <input type="text" id="lote_produto" name="lote_produto" required>
+                    </div>
+
+                    <div>
+                        <label for="validade_produto">Fabricação:</label>
+                        <input type="datetime-local" id="data_validade" name="data_validade" required>
+                    </div>
+
+                    <div>
+                        <label for="validade_produto">Validade:</label>
+                        <input type="datetime-local" id="data_validade" name="data_validade" required>
+                    </div>
                     
+                    <div>
+                        <label for="estoque_minimo">Estoque Atual:</label>
+                        <input type="number" id="estoque_atual" name="estoque_atual" min="0" required>
+                    </div>
+
                     <div>
                         <label for="estoque_minimo">Estoque Mínimo:</label>
                         <input type="number" id="estoque_minimo" name="estoque_minimo" min="0" required>
                     </div>
-                    
+
                     <div>
-                        <label for="fabricante_produto"> Tipo de Medicamento:</label>
-                        <select id="fabricante_produto" name="fabricante_produto" required>
+                        <label for="situacao">Situação:</label>
+                        <select id="situacao" name="situacao">
                             <option value="">Selecione</option>
-                            <option value="1">Controlado de tarja preta</option>
-                            <option value="2">Genérico</option>
-                            <option value="5">Manipulado</option>
-                            <option value="5">Antibióticos</option>
-                            <option value="5">Antialérgicos</option>
-                            <option value="5">Industrializado</option>
-                            <option value="5">Fitoterápico</option>
-                            <option value="5">Importado</option>
-                            <option value="5">Nacional</option>
-                            <option value="5">Tarja vermelha</option>
-                            <option value="5">Sob prescrição</option>
-                            <option value="5">Isentos de prescrição (MIPs)</option>
-                            <option value="5">Sintéticos</option>
-                            <option value="5">Semissintéticos</option>
-                            <option value="5">Outros</option>
+                            <option value="normal">Normal</option>
+                            <option value="baixo">Estoque Baixo</option>
+                            <option value="zerado">Estoque Zerado</option>
+                            <option value="vencido">Vencido</option>
+                            <option value="a_vencer">A vencer (30 dias)</option>
                         </select>
                     </div>
                     
@@ -391,8 +380,9 @@
     <footer>
         <p>&copy; 2025 - Sistema de Estoque de Farmácia</p>
         <address>
-            Contato: <a href="mailto:suporte@estoquefarma.com.br">suporte@estoquefarma.com.br</a>
+            Contato: <a href="mailto:suporte@estoquefarma.com.br">suporte@estoquefarmasic.com.br</a>
         </address>
     </footer>
+    <script src="relatorio.js"></script>
 </body>
 </html>
