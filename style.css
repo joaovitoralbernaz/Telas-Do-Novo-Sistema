@@ -18,18 +18,12 @@ body {
 }
 
 header {
-    height: 130px;
-    display: flex;
-    align-items: center;
-    background-color: #363534;
-    color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    background-color: #363534;
+    color: white;
 }
 
 .logo {
@@ -39,18 +33,34 @@ nav {
 
 .nav-links {
     display: flex;
-    margin-left: 300px;
-    gap: 50px;
+    gap: 20px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
     padding: 0.5rem;
     border-radius: 4px;
     transition: background-color 0.3s;
 }
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 
 .nav-links a:hover {
     background-color: rgba(255, 255, 255, 0.2);
