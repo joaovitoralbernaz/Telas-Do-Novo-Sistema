@@ -278,29 +278,29 @@
             <ul>
                 <li>
                     <strong>Estoque Baixo (5):</strong>
-                    <a href="#">Dipirona 500mg</a>,
-                    <a href="#">Ibuprofeno 600mg</a>,
-                    <a href="#">Cefalexina 500mg</a>,
-                    <a href="#">Metformina 850mg</a>,
-                    <a href="#">Simeticona 75mg</a>
+                    <a href="%">Dipirona 500mg</a>,
+                    <a href="%">Ibuprofeno 600mg</a>,
+                    <a href="%">Cefalexina 500mg</a>,
+                    <a href="%">Metformina 850mg</a>,
+                    <a href="%">Simeticona 75mg</a>
                 </li>
                 <li>
                     <strong>Estoque Zerado (3):</strong>
-                    <a href="#">Amoxicilina 500mg</a>,
-                    <a href="#">Atenolol 50mg</a>,
-                    <a href="#">Azitromicina 500mg</a>
+                    <a href="%">Amoxicilina 500mg</a>,
+                    <a href="%">Atenolol 50mg</a>,
+                    <a href="%">Azitromicina 500mg</a>
                 </li>
                 <li>
                     <strong>Vencidos (2):</strong>
-                    <a href="#">Xarope Guaco</a>,
-                    <a href="#">Vitamina C efervescente</a>
+                    <a href="%">Xarope Guaco</a>,
+                    <a href="%">Vitamina C efervescente</a>
                 </li>
                 <li>
                     <strong>A Vencer em 30 dias (4):</strong>
-                    <a href="#">Omeprazol 20mg</a>,
-                    <a href="#">Sulfato Ferroso</a>,
-                    <a href="#">Dexametasona creme</a>,
-                    <a href="#">Soro fisiológico 500ml</a>
+                    <a href="%">Omeprazol 20mg</a>,
+                    <a href="%">Sulfato Ferroso</a>,
+                    <a href="%">Dexametasona creme</a>,
+                    <a href="%">Soro fisiológico 500ml</a>
                 </li>
             </ul>
         </section>
@@ -358,13 +358,25 @@
                     </div>
                     
                     <div>
-                        <label for="controlado">Medicamento Controlado:</label>
-                        <input type="checkbox" id="controlado" name="controlado">
-                    </div>
-                    
-                    <div>
-                        <label for="generico">Medicamento Genérico:</label>
-                        <input type="checkbox" id="generico" name="generico">
+                        <label for="fabricante_produto"> Tipo de Medicamento:</label>
+                        <select id="fabricante_produto" name="fabricante_produto" required>
+                            <option value="">Selecione</option>
+                            <option value="1">Controlado de tarja preta</option>
+                            <option value="2">Genérico</option>
+                            <option value="5">Manipulado</option>
+                            <option value="5">Antibióticos</option>
+                            <option value="5">Antialérgicos</option>
+                            <option value="5">Industrializado</option>
+                            <option value="5">Fitoterápico</option>
+                            <option value="5">Importado</option>
+                            <option value="5">Nacional</option>
+                            <option value="5">Tarja vermelha</option>
+                            <option value="5">Sob prescrição</option>
+                            <option value="5">Isentos de prescrição (MIPs)</option>
+                            <option value="5">Sintéticos</option>
+                            <option value="5">Semissintéticos</option>
+                            <option value="5">Outros</option>
+                        </select>
                     </div>
                     
                     <div>

@@ -96,6 +96,7 @@ label {
     color: #555;
 }
 
+
 input, select, textarea {
     width: 100%;
     padding: 10px;
@@ -103,12 +104,6 @@ input, select, textarea {
     border-radius: 4px;
     font-size: 1rem;
     transition: border 0.3s;
-}
-
-input:focus, select:focus, textarea:focus {
-    outline: none;
-    border-color: #FC2C2C;
-    box-shadow: 0 0 0 2px rgba(252, 44, 44, 0.2);
 }
 
 textarea {
@@ -150,6 +145,24 @@ a[href="$"] {
 
 a[href="$"]:hover{
     background-color: #ffffff;
+}
+
+a[href="%"]{
+    display: inline-block;
+    padding: 8px 2px;
+    margin-top: 10px;
+    background-color: #c9c7c785;
+    color: rgb(0, 0, 0);;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+a[href="%"]:hover{
+    background-color: rgba(255, 78, 78, 0.893);
+    text-decoration: none;
 }
 
 
